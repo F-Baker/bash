@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# simple echo
+a=`echo ayyomain`
+echo $a
+
+echo
+
+# simple permission check
+a=`ls -l`
+echo $a
+
+makevar=`
+    touch testfile.sh;
+    chmod +755 testfile.sh;
+    mkdir resources;
+    cp testfile.sh resources/application.properties;
+    rm -rf testfile.sh
+    `
+echo $makevar

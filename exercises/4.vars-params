@@ -1,0 +1,22 @@
+#! /bin/bash
+# vars and params
+testvar1=42
+echo testvar1 #doesn't echo the value
+echo $testvar1
+
+testvar2=$testvar1+$testvar1
+echo $testvar2
+# no space on either side of the equals sign when initializing a var
+# a space will be considered an argument
+
+#quote vs regular echo vs single quotes
+
+hello="A B   C   D   Longspace"
+echo $hello "regular"
+echo "$hello" "quoted"
+echo '$hello' "single quotes to print the literal"
+
+uninitvar=23 #set var
+unset uninitvar #unset
+echo $uninitvar
+echo "there isn't anything here because the var has been unset and returned to a null value"

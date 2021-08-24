@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# this is a comment
+# this is a comment following an echo
+echo "A comment following an echo" # comment here
+    # this is a comment with whitespace before it
+# comments can be embedded in a pipe
+# there's an example in the stuff that I don't understand
+echo "A comment may not follow a comment on the same line"
+echo "#this #doesnt #work"
+# comments can be escaped using single quotes, double quotes, or backslash
+\# no comment
+echo "# no comment, double quotes"
+echo " '# still no comment' "
+echo "this is a pound sign being used in a parameter substitution"
+${PATH#*:}
+echo "this is a pound sign being used in a base conversion"
+echo $(( 2#101011 ))
+echo "commands"; echo "separated"; echo "by"; echo "semicolons"
+echo "sometimes the semicolon needs to be escaped or whatever"
+filename= exo22.md
+if [ -x "$filename" ]; then # space after the semicolon
+#+
+    echo "file $filename exists."; cp $filename $filename.md
+else    #
+    echo "file $filename doesn't exist, creating it now"; touch $filename.md
+fi; echo "file test now complete.  
+echo "there seems to be a problem with my configuration that I am not understanding, derp
+
+#case terminator (doesnt work)
+case "$variable" in 
+    abc) echo "\$variable = abc" ;;
+    xyz) echo "\$variable = xyz" ;;
+esac
+
+# dot commands does the following
+# source
+# component of the filename
+# character match
+
+
+a=42; echo $a
+
+
+echo "skipping ahead to the next chapter because this one is extensive"
+
+
